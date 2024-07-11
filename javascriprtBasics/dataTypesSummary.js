@@ -31,6 +31,30 @@ const myFunction = function (){
     console.log("Hello World");
 }
 
-console.log(typeof myFunction);
-console.log(myFunction);
+//console.log(typeof myFunction);
+//console.log(myFunction);
 // null ka typeof object ata h
+
+//*************************
+
+// Stack (primitive) , Heap(Non-primitive)
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename //pass copy of it's value
+anothername = "chaiaurcode"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne;
+
+userTwo.email = "raj@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
